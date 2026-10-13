@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Attendance Management System</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Attendance Management System</h1>
+
+    <div class="card-grid">
+      <div class="card">
+        <h2>QR Attendance</h2>
+        <p>Scan QR code to mark attendance.</p>
+        <button onclick="startQR()">Start QR Scan</button>
+      </div>
+    </div>
+
+    <div id="qr-reader" style="width: 100%; max-width: 500px; margin: 20px auto;"></div>
+    <div id="status" class="status">Ready to start...</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
